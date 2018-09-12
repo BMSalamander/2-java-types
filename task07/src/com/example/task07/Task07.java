@@ -4,9 +4,12 @@ public class Task07 {
 
     public static int solution(int n, int m, int k) {
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        // TODO напишите здесь свою корректную реализацию этого метода, вместо
 
-        return 0;
+        int lengthCamps = n / k; // сколько палаток можно разместить "в длину"
+        int widthCamps = m / k; // сколько палаток - "в ширину" (одной линией)
+
+        return lengthCamps * widthCamps; // проводим линий "в длину" в количестве линий "в ширину" (палатки целые)
     }
 
     public static void main(String[] args) {
