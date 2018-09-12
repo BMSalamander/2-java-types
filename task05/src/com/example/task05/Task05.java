@@ -6,7 +6,18 @@ public class Task05 {
 
         // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
 
-        return "FALSE";
+        int inputNumber = x;
+
+        while (inputNumber != 0) {
+
+            if (inputNumber % 2 != 0)
+                return "FALSE";
+
+            inputNumber /= 10;
+
+        }
+
+        return "TRUE";
     }
 
     public static void main(String[] args) {
