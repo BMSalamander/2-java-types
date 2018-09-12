@@ -6,7 +6,16 @@ public class Task06 {
 
         // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
 
-        return 0;
+        long sumOfTwoInputs = x + y;
+
+        int digitCount = 0;
+
+        do {
+            sumOfTwoInputs /= 10;
+            digitCount++;
+        } while (sumOfTwoInputs != 0);
+
+        return digitCount;
     }
 
     public static void main(String[] args) {
