@@ -5,8 +5,27 @@ public class Task04 {
     public static float calculate(int a, int b, String operation) {
 
         // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
+        float result;
+        float floatA = (float)a, floatB = (float)b;
 
-        return 0;
+        switch(operation) {
+            case "+":
+                result = floatA + floatB;
+                break;
+            case "-":
+                result = floatA - floatB;
+                break;
+            case "/":
+                result = floatA / floatB;
+                break;
+            case "*":
+                result = floatA * floatB;
+                break;
+            default:
+                result = 0f;
+                break;
+        }
+        return result;
     }
 
     public static void main(String[] args) {
