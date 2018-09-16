@@ -6,7 +6,7 @@ public class Task06 {
 
         // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
 
-        long sumOfTwoInputs = x + y;
+        long sumOfTwoInputs = (long)x + y;
 
         int digitCount = 0;
 
